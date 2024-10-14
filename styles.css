@@ -1,0 +1,93 @@
+:root{
+    box-sizing: border-box;
+    font: 18px/1.5 sans-serif;
+    --textInputWidth: 200px;
+    --numberInputWidth: 65px;
+}
+
+body{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+form{
+    display: none;
+    grid-template: repeat(7, 1fr) max-content / max-content;
+    row-gap: 10px;
+    background: rgb(212, 208, 208);
+    padding: 20px;
+    border: solid black 3px;
+    border-radius: 20px;
+}
+/* Selecting first 4 child divs */form > div:nth-child(-n + 4){
+    display: flex;
+    justify-content: space-between;
+}
+form label{
+    margin-right: 20px;
+}
+form input{
+    border-radius: 5px;
+}
+form input[type="text"]{
+    width: var(--textInputWidth);
+}
+form input[type="number"]{
+    width: var(--numberInputWidth);
+}
+form .submitBtnCtn{
+    text-align: center;
+}
+form .submitBtnCtn input,
+#newBookBtn, 
+#displayBtn{
+    font: 500 1rem sans-serif;
+    padding: 2px 10px;
+    background-color: rgb(130, 148, 209);
+    border-radius: 8px;
+    border: solid black 2px;
+}
+
+table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: clamp(700px, 100%, 1200px);
+}
+
+table th,
+table td {
+    padding: 0.25rem;
+    border: solid black 1px;
+    text-align: center;
+}
+
+table th {
+    font: bold 1.2rem sans-serif;
+}
+
+table .cell6 .changeReadBtnCtn{
+    margin-left: 1rem;
+}
+
+table .changeReadBtn,
+table .removeBookBtn{
+    font: 500 0.9rem sans-serif;
+    padding: 2px 8px;
+    background-color: rgb(238, 171, 155);
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+table .header:nth-child(6),
+table .cell6 {
+    min-width: 185px;
+}
+
+    

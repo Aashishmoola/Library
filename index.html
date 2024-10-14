@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashish's Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="logic.js" defer></script>
+</head>
+<body>
+    <h1>This is my Library</h1>
+    <div class="newBookBtnCtn">
+        <label for="newBookBtn">Click here to create a new book: </label>
+        <span><button type="button" id ="newBookBtn">New Book</button></span>
+    </div>
+
+    <form action="" method="post">
+        <div class="title">
+            <label for="titleInput">Title Of Book:</label>
+            <input id="titleInput" type="text" maxlength="50" required name="titleInputValue">
+        </div>
+        <div class="author">
+            <label for="authorInput">Author Of Book:</label>
+            <input id="authorInput" type="text" maxlength="50" name="authorInputValue">
+        </div>
+        <div class="pages">
+            <label for="pagesInput">No. Of Pages:</label>
+            <input id="pagesInput" type="number" step="1" name="pagesInputValue">
+        </div>
+        <div class="releaseYear">
+            <label for="releaseYearInput">Release Year Of Book:</label>
+            <input id="releaseYearInput" type="number" step="1" name="releaseYearInputValue">
+        </div>
+        <div class="isReadInputQn">
+            Have you read the book?
+        </div>
+        <div class="isRead">
+            <input id="isReadInput" type="radio" name="isReadChecked">
+            <label for="isReadInput">Read</label>
+        </div>
+        <div class="isNotRead">
+            <input id="isNotReadInput" type="radio" name="isReadChecked">
+            <label for="isNotReadInput">Not Read Yet</label>
+        </div>    
+        <!-- Button is of type submit in order to use form validation -->
+        <div class="submitBtnCtn">  
+            <input id="submitBtn" type="submit">
+        </div>
+    </form>
+
+    <div class="displayBtnCtn">
+        <label for="displayBtn">Display All Books:</label>
+        <button id="displayBtn">Display</button>
+    </div>
+</body>
+</html>
